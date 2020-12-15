@@ -340,7 +340,20 @@
 								</div>
 								<div class="modal-body  text-center">
 
-									
+				
+
+<button class="btn btn-block" id="demo"> Marcar Data/Hora </button>
+<br>
+									<script>
+										$('#demo').daterangepicker({
+    "singleDatePicker": true,
+    "timePicker": true,
+    "startDate": "12/09/2020",
+    "endDate": "12/15/2020"
+}, function(start, end, label) {
+  console.log("New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') + ' (predefined range: ' + label + ')");
+});
+										</script>
 
 									<select class="custom-select mb-2" id="validationTooltip04" style="width:100%" required>
 										<option selected disabled value="">Tipo de compromisso</option>
@@ -375,7 +388,7 @@
 					<!--fim modal 2-->
 
 										<!-- MODAL ADICIONAR NOVO COMPROMISSO-->
-										<div class="modal fade" id="AlterarCompromisso" tabindex="-1" role="dialog"
+										<div class="modal fade" id="AdicionarCompromisso" tabindex="-1" role="dialog"
 										aria-labelledby="TituloAlterarCompromisso" aria-hidden="true">
 										<div class="modal-dialog modal-dialog-centered" role="document">
 											<div class="modal-content">
