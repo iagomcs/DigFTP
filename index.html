@@ -109,6 +109,8 @@
 
 	<div class="container-fluid">
 		<div class="row">
+			<div id="menu"></div>
+
 			<div class="col-lg-3 d-none d-lg-block" style="position: fixed; top: 0; left: 0; z-index: 10;">
 				<div class="menu-desktop">
 					<div style="height:120px;"></div>
@@ -121,8 +123,8 @@
 						<li><a href="#"><i class="fal fa-boxes-alt"></i> Produtos</a></li>
 						<li><a href="#"><i class="fal fa-lightbulb-exclamation"></i> Due Diligence</a></li>
 						<li><a href="#"><i class="fal fa-books"></i> Conteúdos</a></li>
-						<li><a href="#"><i class="fal fa-lightbulb-exclamation"></i> Plano de Negócio</a></li>
-						<li><a href="minha-conta.html"><i class="fal fa-user-circle"></i> Minha Conta</a></li>
+						<a href="#"><li><i class="fal fa-lightbulb-exclamation"></i> Plano de Negócio</li></a>
+						<a href="minha-conta.html"><li><i class="fal fa-user-circle"></i> Minha Conta</a></li>
 					</ul>
 				</div>
 			</div>
@@ -367,6 +369,13 @@
 						}
 					})
 				})
+			</script>
+
+			<!--load menu-->
+			<script>
+				$(document).ready(function() {
+				  $('#menu').load("menu.html");
+				});
 			</script>
 </body>
 
