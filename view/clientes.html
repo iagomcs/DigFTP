@@ -9,9 +9,9 @@
 	<link rel="stylesheet/less" type="text/css" href="dist/styles.css" />
 	<!-- <script src="//cdn.jsdelivr.net/npm/less"></script> -->
 	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="./css/bootstrap.css">
-	<link rel="stylesheet" href="custom.css">
-	<title>Diglaw</title>
+	<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/css/custom.css" rel="stylesheet" type="text/css" media="all">
+	<title>Clientes - Diglaw</title>
 
 	<!--dependencias seletor data-->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
@@ -37,11 +37,15 @@
 			.msg span:nth-child(1) {
 				border-right: solid 1px #bfc0c1;
 				;
-				min-width: 100px;
+				min-width: 200px;
 				font-weight: 600;
 			}
 
-
+			.msg span:nth-child(2) {
+				border-right: solid 1px #bfc0c1;
+				;
+				min-width: 200px;
+			}
 		}
 	</style>
 </head>
@@ -68,16 +72,16 @@
 				<div class="menu-desktop">
 					<div style="height:120px;"></div>
 					<ul>
-						<li><a href="index.html"><i class="fal fa-home-lg-alt"></i> Página inícial</a></li>
-						<li class="active"><a href="clientes.html"><i class="fal fa-users"></i> Clientes</a></li>
+						<a href="index.html"><li><i class="fal fa-home-lg-alt"></i> Página inícial</li></a>
+						<a href="clientes.html"><li class="active"><i class="fal fa-users"></i> Clientes</li></a>
 						<li><a href="#"><i class="fal fa-exclamation-circle"></i> Pendências</a></li>
-						<li><a href="msg.html"><i class="fal fa-comments"></i> Mensagens</a></li>
+						<li><a href="#"><i class="fal fa-comments"></i> Mensagens</a></li>
 						<li><a href="#"><i class="fal fa-webcam"></i> Teleconsultas</a></li>
 						<li><a href="#"><i class="fal fa-boxes-alt"></i> Produtos</a></li>
 						<li><a href="#"><i class="fal fa-lightbulb-exclamation"></i> Due Diligence</a></li>
 						<li><a href="#"><i class="fal fa-books"></i> Conteúdos</a></li>
 						<li><a href="#"><i class="fal fa-lightbulb-exclamation"></i> Plano de Negócio</a></li>
-						<li><a href="#"><i class="fal fa-user-circle"></i> Minha Conta</a></li>
+						<li><a href="minha-conta.html"><i class="fal fa-user-circle"></i> Minha Conta</a></li>
 					</ul>
 				</div>
 			</div>
@@ -98,8 +102,8 @@
 				</div>
 				<div id="cont_conteudo" class="w-100">
 
-					<h1 class="titulo">AGÊNCIA DE PUBLICIDADE X LTDA. ME</h1>
-					<small class="subtitulo">PVA DIGITAL > Clientes > Agência X > Detalhes</small>
+					<h1 class="titulo">Clientes</h1>
+					<small class="subtitulo">PVA DIGITAL > Clientes</small>
 					<hr>
 
 
@@ -114,141 +118,42 @@
 							<div class="m-0 p-2">
 
 								<div class="row">
-									<div class="col-8">
-										<div class="row">
-											<div class="w-100 pl-3 pr-3 mb-1">
-												<a class="box" href="ver-detalhes-proximos-compromissos.html">
-												<div class="box-conteudo m-0 p-2 mb-1">
-													
-													<div class="col mb-3 mb-md-0 d-block d-md-flex align-items-center justify-content-between">
-														<h2 class="titulo-box">Próximos Compromissos</h2>
-														<div>
-															<i class="fal fa-chevron-circle-right alinha-icon" aria-hidden="true"></i>
-														</div>
-													</div>
-													<hr style="color:black;">
-													<div class="w-100"></div>
-													<div class="col-12 col-md-12 col-lg-12">
-														
-														<span class="msg d-block d-lg-flex p-0">
-															<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">06/06/2020 - 9:30pm</span>
-															<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Loja A</span>
-															<span class="pl-3 pr-3 pt-2 pb-2 d-block">Pauta Teleconsulta</span>
-														</span>
-														<span class="msg d-block d-lg-flex p-0">
-															<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">06/06/2020 - 9:30pm
-															</span>
-															<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Agência X</span>
-															<span class="pl-3 pr-3 pt-2 pb-2 d-block">Informações Para Contato</span>
-														</span>
-														<span class="msg d-block d-lg-flex p-0">
-															<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">06/06/2020 - 9:30pm</span>
-															<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">[cliente]</span>
-															<span class="pl-3 pr-3 pt-2 pb-2 d-block">Solicitação de Teleconsulta</span>
-														</span>
-					
-													</a>
-														<div class="clearfix pb-4"></div>
-													</div>
-												</div>
-
-												<div class="box-conteudo m-0  mb-1 p-2">
-													<div class="col mb-3 mb-md-0 d-block d-md-flex align-items-center justify-content-between">
-														<h2 class="titulo-box">Produtos em andamento</h2>
-														<div>
-															<i class="fal fa-chevron-circle-right alinha-icon" aria-hidden="true"></i>
-														</div>
-													</div>
-												</div>
-
-												<div class="box-conteudo m-0  mb-1 p-2">
-													<div class="col mb-3 mb-md-0 d-block d-md-flex align-items-center justify-content-between">
-														<h2 class="titulo-box">Produtos adquiridos</h2>
-														<div>
-															<i class="fal fa-chevron-circle-right alinha-icon" aria-hidden="true"></i>
-														</div>
-													</div>
-												</div>
-
-												<div class="box-conteudo m-0  mb-1 p-2">
-													<div class="col mb-3 mb-md-0 d-block d-md-flex align-items-center justify-content-between">
-														<h2 class="titulo-box">Dados do cliente</h2>
-														<div>
-															<i class="fal fa-chevron-circle-right alinha-icon" aria-hidden="true"></i>
-														</div>
-													</div>
-												</div>
-
-												<div class="box-conteudo m-0  mb-3 p-2">
-													<div class="col mb-3 mb-md-0 d-block d-md-flex align-items-center justify-content-between">
-														<h2 class="titulo-box">Informações financeiras</h2>
-														<div>
-															<i class="fal fa-chevron-circle-right alinha-icon" aria-hidden="true"></i>
-														</div>
-													</div>
-												</div>
-											</div>
-					
-											
-					
-					</div>
+									<div class="col-sm">
+										<div class="input-group">
+											<i class="fal fa-search"></i>
+											<input type="text" class="form-control" placeholder="Nome do Cliente">
+										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-sm">
+										<select class="custom-select" id="validationTooltip04" style="width:100%"
+											required>
+											<option selected disabled value="">Organizar por Hoje</option>
+											<option>Ontem</option>
+											<option>Últimos 7 dias</option>
+											<option>Últimos 30 dias</option>
+											<option>Esse mês</option>
+											<option>Último mês</option>
+										</select>
+									</div>
+									<div class="col-sm text-right">
+										<button type="button" class="btn btn-diglaw" style="width: 250px;"
+											data-toggle="modal" data-target="#ExemploModalCentralizado">Adicionar
+											Cliente<i class="fal fa-plus-circle alinha-icon"></i></i></button>
+									</div>
+								</div>
 
-										<div class="row">
-											<div class="w-100 pl-3 pr-3 mb-3">
-												<div class="box-conteudo m-0 p-2">
-													<div class="col mb-3 mb-md-0 d-block d-md-flex align-items-center justify-content-between">
-														<h2 class="titulo-box">Suas mensagens</h2>
-														<div>
-															<button type="button" class="btn btn-diglaw" style="width: 250px;">Ver Mais <i class="fal fa-chevron-circle-right alinha-icon" aria-hidden="true"></i></button>
-														</div>
-													</div>
-													<hr style="color:black;">
-													<div class="w-100"></div>
-													<div class="col-12 col-md-12 col-lg-12">
-														<div class="form-group">
-															<label for="exampleFormControlTextarea1"></label>
-															<textarea class="form-control" id="exampleFormControlTextarea1"
-																rows="3"></textarea>
-														</div>
-														<div class="text-center">
-															<button type="submit" class="btn btn-block btn-primary mb-2 text-center">Envie sua
-																mensagem</button>
-														</div>
-													</div>
-													<h2 class="titulo-box pl-3 mt-5">Últimas Mensagens</h2>
-													<span class="msg d-block d-lg-flex p-0">
-														<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">06/06/2020 - 9:30pm</span>
-														<span class="pl-3 pr-3 pt-2 pb-2 d-block"><strong>Iago</strong>: Dr. Favor me posicionar do contrato de trabalho que pedi ...</span>
-													</span>
-													<span class="msg d-block d-lg-flex p-0">
-														<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">06/06/2020 - 9:30pm</span>
-														<span class="pl-3 pr-3 pt-2 pb-2 d-block"><strong>Iago</strong>: Prezado, sua solicitação de contrato foi feita ,em breve ...</span>
-													</span>
-													<span class="msg d-block d-lg-flex p-0">
-														<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">06/06/2020 - 9:30pm</span>
-														<span class="pl-3 pr-3 pt-2 pb-2 d-block"><strong>Iago</strong>: Dr, devo comprar o contrato em breve como foi dito ...  </span>
-													</span>
-												</div>
-											</div>
-					
-											
-					
-					</div>
+								<div
+									class="col mb-3 mb-md-0 d-block d-md-flex align-items-center justify-content-between">
 
 
-									
+
+									<div class="text-center">
+
 									</div>
 								</div>
 
 
-
-							
-
-
-
-							
+								<div class="w-100"></div>
 
 							</div>
 						</div>
@@ -258,6 +163,47 @@
 
 					<!--BOXES  STATS-->
 
+					<div class="row">
+
+
+						<div class="row w-100  pl-3">
+
+
+
+
+							<hr>
+							<div class="col-sm p-3 box-conteudo text-center">
+								<h2 class="titulo-box">Agência X</h2>
+								<hr>
+								<button type="button" class="btn btn-block  btn-diglaw">Ver Duediligence <i
+										class="fal fa-arrow-circle-right alinha-icon"></i></button>
+								<br>
+								<a href="ver-detalhes-cliente.html"><button type="button" class="btn btn-block  btn-diglaw">Ver Detalhes do cliente <i
+										class="fal fa-arrow-circle-right alinha-icon"></i></button></a>
+							</div>
+							<div class="col-sm p-3 box-conteudo text-center">
+								<h2 class="titulo-box">Bazar Mania</h2>
+								<hr>
+								<button type="button" class="btn btn-block  btn-diglaw">Ver Duediligence <i
+										class="fal fa-arrow-circle-right alinha-icon"></i></button>
+								<br>
+								<button type="button" class="btn btn-block  btn-diglaw">Ver Detalhes do cliente <i
+										class="fal fa-arrow-circle-right alinha-icon"></i></button>
+							</div>
+							<div class="col-sm p-3 box-conteudo text-center">
+								<h2 class="titulo-box">Consultório</h2>
+								<hr>
+								<button type="button" class="btn btn-block  btn-diglaw">Ver Duediligence <i
+										class="fal fa-arrow-circle-right alinha-icon"></i></button>
+								<br>
+								<button type="button" class="btn btn-block  btn-diglaw">Ver Detalhes do cliente <i
+										class="fal fa-arrow-circle-right alinha-icon"></i></button>
+							</div>
+
+
+
+						</div>
+					</div>
 
 					<!-- MODAL ADICIONAR CLIENTE-->
 
@@ -285,7 +231,7 @@
 										<input type="text" class="form-control" placeholder="Telefone do Cliente">
 									</div>
 									<div class="input-group p-2">
-										<i class="fal fa-user-tie"></i>
+										<i class="fal fa-user-tie"	></i>
 										<input type="text" class="form-control" placeholder="Com Quem Falar na Empresa">
 									</div>
 									<div class="input-group p-2">
@@ -297,26 +243,23 @@
 										<input type="text" class="form-control" placeholder="CNPJ da Empresa">
 									</div>
 									<div class="input-group p-2">
-										<select class="custom-select" id="validationTooltip04" style="width:100%"
-											required>
-											<option selected disabled value="">Tipo de Empresa</option>
-											<option>Alimentação</option>
-											<option>Financeiro</option>
-											<option>Academia</option>
-											<option>Consultório</option>
-										</select></div>
-									<hr>
+									<select class="custom-select" id="validationTooltip04" style="width:100%" required>
+										<option selected disabled value="">Tipo de Empresa</option>
+										<option>Alimentação</option>
+										<option>Financeiro</option>
+										<option>Academia</option>
+										<option>Consultório</option>
+									</select></div>
+<hr>
 									<div class="form-group form-check text-center">
 										<input type="checkbox" class="form-check-input" id="exampleCheck1">
-										<label class="form-check-label" for="exampleCheck1">Enviar convite para acessar
-											o sistema</label>
-									</div>
-
-
+										<label class="form-check-label" for="exampleCheck1">Enviar convite para acessar o sistema</label>
+									  </div>
+									  
+						
 
 								</div>
-								<div class="divisao-modal text-center p-2" style="    border-top: 1px solid #dee2e6;">A
-									senha é gerada automáticamente e enviada por e-mail.</div>
+								<div class="divisao-modal text-center p-2" style="    border-top: 1px solid #dee2e6;">A senha é gerada automáticamente e enviada por e-mail.</div>
 
 								<div class="modal-footer">
 									<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
@@ -330,12 +273,12 @@
 				<!-- <div style="height:2000px;"></div> -->
 			</div>
 		</div>
+		<footer class="text-center">
+			DigLaw - Todos Direitos Reservados
+		</footer>
 	</div>
 
-	<footer class="text-center p-5"
-		style="margin-top:50px;color:#fff;background: linear-gradient(to top, #212121 0%, #3b3b3b 48%);">
-		DigLaw - Todos Direitos Reservados
-	</footer>
+
 	<!-- Optional JavaScript; choose one of the two! -->
 	<script src="https://kit.fontawesome.com/389fa9d2db.js" crossorigin="anonymous"></script>
 	<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
