@@ -88,6 +88,16 @@ top:0;}
     padding:15px
 }
 
+.lista-msg .active {
+    color:#fff;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+    background-color: #1a1a1ac4;
+    padding:15px
+}
+
 ::-webkit-scrollbar {
     width: 0px;
     height: 4px;
