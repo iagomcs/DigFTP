@@ -11,7 +11,7 @@
 	<!-- Bootstrap CSS -->
 	<link href="/css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
 	<link href="/css/custom.css" rel="stylesheet" type="text/css" media="all">
-	<title>Pendências - Diglaw</title>
+	<title>Mensagens - Diglaw</title>
 
 	<!--dependencias seletor data-->
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
@@ -74,8 +74,8 @@
 					<ul>
 						<a href="/index.html"><li><i class="fal fa-home-lg-alt"></i> Página inícial</li></a>
 						<a href="/clientes.html"><li><i class="fal fa-users"></i> Clientes</li></a>
-						<a href="/pendencias.html"><li class="active"><i class="fal fa-exclamation-circle"></i> Pendências</li></a>
-						<li><a href="/mensagens.html"><i class="fal fa-comments"></i> Mensagens</a></li>
+						<a href="/pendencias.html"><li><i class="fal fa-exclamation-circle"></i> Pendências</li></a>
+						<li class="active"><a href="#"><i class="fal fa-comments"></i> Mensagens</a></li>
 						<li><a href="#"><i class="fal fa-webcam"></i> Teleconsultas</a></li>
 						<li><a href="#"><i class="fal fa-boxes-alt"></i> Produtos</a></li>
 						<li><a href="#"><i class="fal fa-lightbulb-exclamation"></i> Due Diligence</a></li>
@@ -102,106 +102,83 @@
 				</div>
 				<div id="cont_conteudo" class="w-100">
 
-					<h1 class="titulo">Pendências</h1>
-					<small class="subtitulo">PVA DIGITAL > Pendências</small>
+					<h1 class="titulo">Mensagens</h1>
+					<small class="subtitulo">Diglaw > Mensagens</small>
 					<hr>
-					<div class="row">
-						<div class="col-sm">
-							<div class="input-group">
-								<i class="fal fa-search"></i>
-								<input type="text" class="form-control" placeholder="Procurar Pendência">
-							</div>
-						</div>
-						<div class="col-sm">
-							<select class="custom-select" id="validationTooltip04" style="width:100%"
-								required>
-								<option selected disabled value="">Organizar por</option>
-								<option>Clientes</option>
-								<option>Data</option>
-							</select>
-						</div>
-						<div class="col-sm text-right">
-							<button type="button" class="btn btn-diglaw" style="width: 250px;"
-								data-toggle="modal" data-target="#ExemploModalCentralizado">Nova Pendência<i class="fal fa-plus-circle alinha-icon"></i></i></button>
-						</div>
-					</div>
-					<br>
+					<!--inicio msg-->
 					<div class="row">
 						<div class="w-100 pl-3 pr-3 mb-3">
 							<div class="box-conteudo m-0 p-2">
 								<div
 									class="col mb-3 mb-md-0 d-block d-md-flex align-items-center justify-content-between">
+									
+					
+								</div>
+<br>
+								<div class="w-100"></div>
+								<div class="col-12 col-md-5 col-lg-2 float-left mb-3 mb-md-0">						<div class="input-group">
+									<i class="fal fa-search"></i>
+									<input type="text" class="form-control" placeholder="Procurar Cliente">
+								</div>
+							<hr>
+							<div class="lista-msg">
+								
+								<ul>
+									<a href="#"><li><i class="fal fa-angle-right"></i> Iago Souza <span class="badge badge-light alert-primary">4</span></li></a>
+									<hr>
+									<a href="#"><li><i class="fal fa-angle-right"></i> Fábio</li></a>
+									<hr>
+									<a href="#"><li><i class="fal fa-angle-right"></i> Mariana</li></a>
+
+								</ul>
+							</div>
+							
+							</div>
+								<div class="col-12 col-md-7 col-lg-10 float-left">
+									<p class="titulo-box">Iago Souza</p>
+									<hr>
+									  <div class="alert alert-primary" role="alert">
+										<h4 class="alert-heading text-right">Iago Souza</h4>
+										<p class="text-right">Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+										<hr>
+										<p class="mb-0 small text-right">30minutos atrás</p>
+									  </div>
+									  <div class="alert alert-primary text-right" role="alert">
+										O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.
+										<hr>
+										<p class="mb-0 small text-right">30minutos atrás</p>
+									  </div>
+									  <div class="alert alert-primary text-right" role="alert">
+										O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão.
+										<hr>
+										<p class="mb-0 small text-right">30minutos atrás</p>
+									  </div>
+
+									  <div class="alert alert-dark" role="alert">
+										<h4 class="alert-heading text-left">Fábio</h4>
+										<p class="text-left">Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+										<hr>
+										<p class="mb-0 small text-left">30minutos atrás</p>
+									  </div>
+
+		<hr>
+
+									<div class="form-group">
+								
+										<textarea class="form-control" placeholder="Digite sua mensagem..."id="exampleFormControlTextarea1" rows="3"></textarea>
+										<button type="button" class="btn mt-2 mr-2 ml-2 float-right btn-diglaw"><i class="fal fa-reply"></i> Enviar</button>
+										<button type="button" class="btn mt-2 float-right btn-diglaw"><i class="fal fa-file-upload"></i> Anexar Arquivo</button>
+									</div>
+									</form>
 
 								</div>
-								<br>
-								<div class="w-100"></div>
-								<span class="msg d-block d-lg-flex p-0">
-									<span class="pl-3 pr-3 pt-2 pb-2 d-block">Contrato
-										de locação</span>
-									<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Lucas
-										Picceli</span>
-									<span
-										class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Entrega
-										em
-										12.12.2020</span>
-								</span>
-								<span class="msg d-block d-lg-flex p-0">
-									<span class="pl-3 pr-3 pt-2 pb-2 d-block">Contrato
-										de locação</span>
-									<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Lucas
-										Picceli</span>
-									<span
-										class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Entrega
-										em
-										12.12.2020</span>
-								</span>
-								<span class="msg d-block d-lg-flex p-0">
-									<span class="pl-3 pr-3 pt-2 pb-2 d-block">Contrato
-										de locação</span>
-									<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Lucas
-										Picceli</span>
-									<span
-										class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Entrega
-										em
-										12.12.2020</span>
-								</span>
-
-								<span class="msg d-block d-lg-flex p-0">
-									<span class="pl-3 pr-3 pt-2 pb-2 d-block">Contrato
-										de locação</span>
-									<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Lucas
-										Picceli</span>
-									<span
-										class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Entrega
-										em
-										12.12.2020</span>
-								</span>
-								<span class="msg d-block d-lg-flex p-0">
-									<span class="pl-3 pr-3 pt-2 pb-2 d-block">Contrato
-										de locação</span>
-									<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Lucas
-										Picceli</span>
-									<span
-										class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Entrega
-										em
-										12.12.2020</span>
-								</span>
-
-
-				<span class="msg d-block d-lg-flex p-0">
-					<span class="pl-3 pr-3 pt-2 pb-2 d-block">Contrato
-						de locação</span>
-					<span class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Lucas
-						Picceli</span>
-					<span
-						class="pl-3 pr-3 pt-2 pb-2 d-block text-center">Entrega
-						em
-						12.12.2020</span>
-				</span>
 								<div class="clearfix pb-4"></div>
 							</div>
 						</div>
 					</div>
+<!--fim msg-->
+
+					
 
 				
 

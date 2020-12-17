@@ -71,6 +71,23 @@ top:0;}
     padding-right: 10px;
 }
 
+.lista-msg ul {
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+}
+
+.lista-msg li:hover {
+    color:#fff;
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style: none;
+    background-color: #1a1a1ac4;
+    transition: 0.5s;
+    padding:15px
+}
+
 ::-webkit-scrollbar {
     width: 0px;
     height: 4px;
@@ -164,14 +181,16 @@ top:0;}
     -moz-box-shadow: inset 0 0 0 #000000;
     -webkit-box-shadow: inset 0 0 0 #000000;
     box-shadow: inset 0 0 0 #000000;
+    transition: 0.5s;
 }
 
 .menu-desktop li:hover {
-    background: rgb(142 142 142 / 0%);
+    background: rgb(142 142 142 / 27%);
     -moz-box-shadow: inset 0 0 10px #ffffff2e;
     -webkit-box-shadow: inset 0 0 10px #ffffff2e;
     box-shadow: inset 0 0 20px #ffffff2e;
     color: #fff;
+    transition: 1s;
 }
 
 .menu-desktop li a {
