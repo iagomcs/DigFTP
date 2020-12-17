@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      { "source": "/mensagens", "destination": "/mensagens.html" },
+      { "source": "/resize/:width/:height", "destination": "/api/sharp" },
+      { "source": "/user/:id", "destination": "/api/user" },
+      { "source": "/proxy/:match*", "destination": "https://example.com/:match*" }
+    ]
+  }
