@@ -79,22 +79,26 @@ top:0;}
 .lista-msg li:hover {
     color:#fff;
     font-weight: 600;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     list-style: none;
     background-color: #1a1a1ac4;
     transition: 0.5s;
-    padding:15px
+    border-radius: 50px 15px 50px 15px;
 }
 
 .lista-msg .active {
-    color:#fff;
+    color: #fff;
     font-weight: 600;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 50px;
+    /* padding-right: 6px; */
+    padding-top: 15px;
+    padding-bottom: 15px;
     list-style: none;
     background-color: #1a1a1ac4;
-    padding:15px
+    /* padding: 15px; */
+    border-radius: 50px 15px 50px 15px;
 }
 
 ::-webkit-scrollbar {
